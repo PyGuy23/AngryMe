@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AngryMe_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="Tm1-Az-hGE">
+                            <items>
+                                <button height="23" alignment="left" title="Button" id="rno-sE-QQd">
+                                    <color key="titleColor" red="1" green="0.39122785719999997" blue="0.32826321009999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </button>
+                                <label alignment="left" text="Angry" id="mQ6-vB-Qze">
+                                    <color key="textColor" red="1" green="0.39122785716450603" blue="0.32826321010825521" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <switch width="1" alignment="left" value="YES" title="Switch" id="883-cM-Jhi">
+                            <connections>
+                                <action selector="coolOff1:" destination="AgC-eL-Hgc" id="pW1-Qp-2yL"/>
+                            </connections>
+                        </switch>
+                        <timer alignment="center" textAlignment="center" id="emr-cP-TNx">
+                            <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </timer>
+                    </items>
+                    <connections>
+                        <outlet property="coolOff" destination="emr-cP-TNx" id="CmL-lT-UUf"/>
+                        <outlet property="cooledDown" destination="rno-sE-QQd" id="hEr-y6-lQL"/>
+                        <outlet property="cooledOff" destination="mQ6-vB-Qze" id="vYF-kF-n5B"/>
+                        <outlet property="mySwitch" destination="883-cM-Jhi" id="sm2-S3-CgV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="AngryMe_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

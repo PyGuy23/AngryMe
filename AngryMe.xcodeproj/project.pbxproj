@@ -13,6 +13,13 @@
 		B2574AA01B2E4B420088CF7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2574A9F1B2E4B420088CF7E /* Images.xcassets */; };
 		B2574AA31B2E4B420088CF7E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2574AA11B2E4B420088CF7E /* LaunchScreen.xib */; };
 		B2574AAF1B2E4B420088CF7E /* AngryMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2574AAE1B2E4B420088CF7E /* AngryMeTests.swift */; };
+		B2574AC21B2E4B590088CF7E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2574AC11B2E4B590088CF7E /* InterfaceController.swift */; };
+		B2574AC41B2E4B590088CF7E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2574AC31B2E4B590088CF7E /* NotificationController.swift */; };
+		B2574AC61B2E4B590088CF7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2574AC51B2E4B590088CF7E /* Images.xcassets */; };
+		B2574ACA1B2E4B5A0088CF7E /* AngryMe WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = B2574AC91B2E4B5A0088CF7E /* AngryMe WatchKit App.app */; };
+		B2574AD21B2E4B5A0088CF7E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2574AD01B2E4B5A0088CF7E /* Interface.storyboard */; };
+		B2574AD41B2E4B5A0088CF7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2574AD31B2E4B5A0088CF7E /* Images.xcassets */; };
+		B2574AD71B2E4B5A0088CF7E /* AngryMe WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B2574ABC1B2E4B590088CF7E /* AngryMe WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +30,35 @@
 			remoteGlobalIDString = B2574A921B2E4B420088CF7E;
 			remoteInfo = AngryMe;
 		};
+		B2574ACB1B2E4B5A0088CF7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2574A8B1B2E4B420088CF7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2574AC81B2E4B5A0088CF7E;
+			remoteInfo = "AngryMe WatchKit App";
+		};
+		B2574AD51B2E4B5A0088CF7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2574A8B1B2E4B420088CF7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2574ABB1B2E4B590088CF7E;
+			remoteInfo = "AngryMe WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B2574ADE1B2E4B5A0088CF7E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B2574AD71B2E4B5A0088CF7E /* AngryMe WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B2574A931B2E4B420088CF7E /* AngryMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngryMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +71,16 @@
 		B2574AA81B2E4B420088CF7E /* AngryMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngryMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2574AAD1B2E4B420088CF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2574AAE1B2E4B420088CF7E /* AngryMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngryMeTests.swift; sourceTree = "<group>"; };
+		B2574ABC1B2E4B590088CF7E /* AngryMe WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AngryMe WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2574ABF1B2E4B590088CF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2574AC01B2E4B590088CF7E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B2574AC11B2E4B590088CF7E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B2574AC31B2E4B590088CF7E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B2574AC51B2E4B590088CF7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B2574AC91B2E4B5A0088CF7E /* AngryMe WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AngryMe WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2574ACF1B2E4B5A0088CF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2574AD11B2E4B5A0088CF7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B2574AD31B2E4B5A0088CF7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +98,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2574AB91B2E4B590088CF7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +113,8 @@
 			children = (
 				B2574A951B2E4B420088CF7E /* AngryMe */,
 				B2574AAB1B2E4B420088CF7E /* AngryMeTests */,
+				B2574ABD1B2E4B590088CF7E /* AngryMe WatchKit Extension */,
+				B2574ACD1B2E4B5A0088CF7E /* AngryMe WatchKit App */,
 				B2574A941B2E4B420088CF7E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +124,8 @@
 			children = (
 				B2574A931B2E4B420088CF7E /* AngryMe.app */,
 				B2574AA81B2E4B420088CF7E /* AngryMeTests.xctest */,
+				B2574ABC1B2E4B590088CF7E /* AngryMe WatchKit Extension.appex */,
+				B2574AC91B2E4B5A0088CF7E /* AngryMe WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +168,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B2574ABD1B2E4B590088CF7E /* AngryMe WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B2574AC11B2E4B590088CF7E /* InterfaceController.swift */,
+				B2574AC31B2E4B590088CF7E /* NotificationController.swift */,
+				B2574AC51B2E4B590088CF7E /* Images.xcassets */,
+				B2574ABE1B2E4B590088CF7E /* Supporting Files */,
+			);
+			path = "AngryMe WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B2574ABE1B2E4B590088CF7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2574ABF1B2E4B590088CF7E /* Info.plist */,
+				B2574AC01B2E4B590088CF7E /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2574ACD1B2E4B5A0088CF7E /* AngryMe WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B2574AD01B2E4B5A0088CF7E /* Interface.storyboard */,
+				B2574AD31B2E4B5A0088CF7E /* Images.xcassets */,
+				B2574ACE1B2E4B5A0088CF7E /* Supporting Files */,
+			);
+			path = "AngryMe WatchKit App";
+			sourceTree = "<group>";
+		};
+		B2574ACE1B2E4B5A0088CF7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2574ACF1B2E4B5A0088CF7E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +216,12 @@
 				B2574A8F1B2E4B420088CF7E /* Sources */,
 				B2574A901B2E4B420088CF7E /* Frameworks */,
 				B2574A911B2E4B420088CF7E /* Resources */,
+				B2574ADE1B2E4B5A0088CF7E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B2574AD61B2E4B5A0088CF7E /* PBXTargetDependency */,
 			);
 			name = AngryMe;
 			productName = AngryMe;
@@ -150,6 +246,39 @@
 			productReference = B2574AA81B2E4B420088CF7E /* AngryMeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B2574ABB1B2E4B590088CF7E /* AngryMe WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2574ADB1B2E4B5A0088CF7E /* Build configuration list for PBXNativeTarget "AngryMe WatchKit Extension" */;
+			buildPhases = (
+				B2574AB81B2E4B590088CF7E /* Sources */,
+				B2574AB91B2E4B590088CF7E /* Frameworks */,
+				B2574ABA1B2E4B590088CF7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2574ACC1B2E4B5A0088CF7E /* PBXTargetDependency */,
+			);
+			name = "AngryMe WatchKit Extension";
+			productName = "AngryMe WatchKit Extension";
+			productReference = B2574ABC1B2E4B590088CF7E /* AngryMe WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		B2574AC81B2E4B5A0088CF7E /* AngryMe WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2574AD81B2E4B5A0088CF7E /* Build configuration list for PBXNativeTarget "AngryMe WatchKit App" */;
+			buildPhases = (
+				B2574AC71B2E4B5A0088CF7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AngryMe WatchKit App";
+			productName = "AngryMe WatchKit App";
+			productReference = B2574AC91B2E4B5A0088CF7E /* AngryMe WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +294,12 @@
 					B2574AA71B2E4B420088CF7E = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = B2574A921B2E4B420088CF7E;
+					};
+					B2574ABB1B2E4B590088CF7E = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					B2574AC81B2E4B5A0088CF7E = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -183,6 +318,8 @@
 			targets = (
 				B2574A921B2E4B420088CF7E /* AngryMe */,
 				B2574AA71B2E4B420088CF7E /* AngryMeTests */,
+				B2574ABB1B2E4B590088CF7E /* AngryMe WatchKit Extension */,
+				B2574AC81B2E4B5A0088CF7E /* AngryMe WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +339,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2574ABA1B2E4B590088CF7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2574ACA1B2E4B5A0088CF7E /* AngryMe WatchKit App.app in Resources */,
+				B2574AC61B2E4B590088CF7E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2574AC71B2E4B5A0088CF7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2574AD21B2E4B5A0088CF7E /* Interface.storyboard in Resources */,
+				B2574AD41B2E4B5A0088CF7E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +380,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2574AB81B2E4B590088CF7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2574AC41B2E4B590088CF7E /* NotificationController.swift in Sources */,
+				B2574AC21B2E4B590088CF7E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +396,16 @@
 			isa = PBXTargetDependency;
 			target = B2574A921B2E4B420088CF7E /* AngryMe */;
 			targetProxy = B2574AA91B2E4B420088CF7E /* PBXContainerItemProxy */;
+		};
+		B2574ACC1B2E4B5A0088CF7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2574AC81B2E4B5A0088CF7E /* AngryMe WatchKit App */;
+			targetProxy = B2574ACB1B2E4B5A0088CF7E /* PBXContainerItemProxy */;
+		};
+		B2574AD61B2E4B5A0088CF7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2574ABB1B2E4B590088CF7E /* AngryMe WatchKit Extension */;
+			targetProxy = B2574AD51B2E4B5A0088CF7E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +424,14 @@
 				B2574AA21B2E4B420088CF7E /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		B2574AD01B2E4B5A0088CF7E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2574AD11B2E4B5A0088CF7E /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -392,6 +574,62 @@
 			};
 			name = Release;
 		};
+		B2574AD91B2E4B5A0088CF7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = AngryMe_WatchKit_Extension;
+				INFOPLIST_FILE = "AngryMe WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		B2574ADA1B2E4B5A0088CF7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = AngryMe_WatchKit_Extension;
+				INFOPLIST_FILE = "AngryMe WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		B2574ADC1B2E4B5A0088CF7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AngryMe WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B2574ADD1B2E4B5A0088CF7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "AngryMe WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -417,6 +655,22 @@
 			buildConfigurations = (
 				B2574AB61B2E4B420088CF7E /* Debug */,
 				B2574AB71B2E4B420088CF7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B2574AD81B2E4B5A0088CF7E /* Build configuration list for PBXNativeTarget "AngryMe WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2574AD91B2E4B5A0088CF7E /* Debug */,
+				B2574ADA1B2E4B5A0088CF7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B2574ADB1B2E4B5A0088CF7E /* Build configuration list for PBXNativeTarget "AngryMe WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2574ADC1B2E4B5A0088CF7E /* Debug */,
+				B2574ADD1B2E4B5A0088CF7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
